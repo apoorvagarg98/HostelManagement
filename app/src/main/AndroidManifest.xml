@@ -11,11 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Uleulue">
-        <activity android:name=".forHistoryFindStudentsInWarden"></activity>
-        <activity android:name=".wardenKiHistory" />
-        <activity android:name=".parentsKiHistory" />
+        <activity
+            android:name=".layoutofHistory"
+            android:exported="true" />
+        <activity
+            android:name=".cardViewwaliHistory"
+            android:exported="true" />
+        <activity android:name=".forHistoryFindStudentsInWarden" />
         <activity android:name=".list2" />
-        <activity android:name=".bacchokipuranikatha" />
         <activity android:name=".forgotpassword" />
         <activity android:name=".viewacceptedrequest" />
         <activity android:name=".wardenrequestpreviewpage" />

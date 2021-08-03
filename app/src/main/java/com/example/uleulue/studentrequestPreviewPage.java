@@ -85,8 +85,8 @@ public class studentrequestPreviewPage extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(studentrequestPreviewPage.this,parentsKiHistory.class);
-                intent.putExtra("ud2",userid1);
+                Intent intent = new Intent(studentrequestPreviewPage.this,cardViewwaliHistory.class);
+                intent.putExtra("userkey9810",userid1);
                 startActivity(intent);
 
             }
@@ -95,7 +95,7 @@ public class studentrequestPreviewPage extends AppCompatActivity {
         mUserRef.child(userid1).child(mUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                if(snapshot.child("status").getValue().toString().equals("AcceptedByParents"))
+                if(snapshot.child("status").getValue().toString().equals("AcceptedByParents") || snapshot.child("status").getValue().toString().equals("journey completed succesfully"))
                 {
                     constraintLayout.setVisibility(View.GONE);
                     tick.setVisibility(View.VISIBLE);

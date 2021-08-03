@@ -82,7 +82,7 @@ public class setrealtime extends AppCompatActivity {
 
             }
         });
-        mUserRef.child(userid).addValueEventListener(new ValueEventListener() {
+       /* mUserRef.child(userid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 if(snapshot.child("realentrydateandtime").getValue().toString()!=null)
@@ -102,7 +102,7 @@ public class setrealtime extends AppCompatActivity {
                 Toast.makeText(setrealtime.this,"error occured",Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
     }
 
     private void perfromaction2(String userid, String studentuserid, String useridparent) {

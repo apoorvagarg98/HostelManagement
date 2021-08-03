@@ -32,7 +32,7 @@ import java.util.HashMap;
 
 public class matapitaprofileView extends AppCompatActivity {
 
-    DatabaseReference mUserRef,requestRef;
+    DatabaseReference mUserRef,requestRef,warden;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
     ListView listView;
@@ -50,6 +50,7 @@ public class matapitaprofileView extends AppCompatActivity {
         Toast.makeText(this , "" + userid, Toast.LENGTH_LONG).show();
         mUserRef = FirebaseDatabase.getInstance().getReference().child("pusers").child(userid);
         requestRef = FirebaseDatabase.getInstance().getReference().child("OutpassRequesttoParent");
+        warden = FirebaseDatabase.getInstance().getReference().child("databaseofwarden");
 
         historyofstudents = findViewById(R.id.ViewbacchokiHistory);
         mAuth = FirebaseAuth.getInstance();
@@ -112,9 +113,9 @@ public class matapitaprofileView extends AppCompatActivity {
                     historyofstudents.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(matapitaprofileView.this,bacchokipuranikatha.class);
-                            intent.putExtra("ui",userid);
-                            intent.putExtra("exd",snapshot.child("exitDate").getValue().toString());
+                            Intent intent = new Intent(matapitaprofileView.this,cardViewwaliHistory.class);
+                            intent.putExtra("userkey9810",mUser.getUid());
+
                             startActivity(intent);
 
                         }
@@ -206,6 +207,13 @@ public class matapitaprofileView extends AppCompatActivity {
                     Toast.makeText(matapitaprofileView.this, "error in cancelling the request" , Toast.LENGTH_LONG).show();
                 }
 
+
+            }
+        });
+        warden.child(mUser.getUid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                Toast.makeText(matapitaprofileView.this, "request removed" , Toast.LENGTH_LONG).show();
 
             }
         });

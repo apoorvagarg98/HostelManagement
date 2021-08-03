@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -69,7 +70,7 @@ public class studentsdhundoviawarden extends AppCompatActivity implements Filter
         options = new FirebaseRecyclerOptions.Builder<requestdhundo>().setQuery(query, requestdhundo.class).build();
         adapter = new FirebaseRecyclerAdapter<requestdhundo, matapitadhundoHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull @NotNull matapitadhundoHolder holder, int position, @NonNull @NotNull requestdhundo model) {
+            protected void onBindViewHolder(@NonNull @NotNull matapitadhundoHolder holder, @SuppressLint("RecyclerView") int position, @NonNull @NotNull requestdhundo model) {
 
 
                 holder.username.setText(model.getName());
@@ -117,15 +118,15 @@ public class studentsdhundoviawarden extends AppCompatActivity implements Filter
 
     private void process(String s) {
 
-        Query query = mUserRef.orderByChild("address").startAt(s).endAt(s + "\uf8ff");
+        Query query = mUserRef.orderByChild("name").startAt(s).endAt(s + "\uf8ff");
         options = new FirebaseRecyclerOptions.Builder<requestdhundo>().setQuery(query, requestdhundo.class).build();
         adapter = new FirebaseRecyclerAdapter<requestdhundo, matapitadhundoHolder>(options) {
 
 
             @Override
-            protected void onBindViewHolder(@NonNull @NotNull matapitadhundoHolder holder, int position, @NonNull @NotNull requestdhundo model) {
+            protected void onBindViewHolder(@NonNull @NotNull matapitadhundoHolder holder, @SuppressLint("RecyclerView") int position, @NonNull @NotNull requestdhundo model) {
 
-
+            if(s.equals(model.getName())){
                 holder.username.setText(model.getName());
                 holder.profession.setText(model.getAddress());
                 holder.studentsname.setText(model.getExitDate());
@@ -139,7 +140,14 @@ public class studentsdhundoviawarden extends AppCompatActivity implements Filter
                         startActivity(intent);
 
                     }
-                });
+                });}
+            else
+            {
+                holder.itemView.setVisibility(View.GONE);
+                holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(0,0));
+
+
+            }
             }
 
 
@@ -164,21 +172,31 @@ public class studentsdhundoviawarden extends AppCompatActivity implements Filter
         MenuItem menuItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) menuItem.getActionView();
         searchView.setQueryHint("Type here to search");
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                loadUsers("");
+                return false;
+            }
+        });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                process("");
+                process(query);
                 return false;
+
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                process("");
+                process(newText);
                 return false;
             }
         });
         return super.onCreateOptionsMenu(menu);
+
+
     }
 
 

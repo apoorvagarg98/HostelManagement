@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -64,7 +65,7 @@ public class matapitadhundo extends AppCompatActivity {
         options = new FirebaseRecyclerOptions.Builder<parentsdhundo>().setQuery(query,parentsdhundo.class).build();
         adapter = new FirebaseRecyclerAdapter<parentsdhundo, matapitadhundoHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull matapitadhundoHolder holder, int position, @NonNull parentsdhundo model) {
+            protected void onBindViewHolder(@NonNull matapitadhundoHolder holder, @SuppressLint("RecyclerView") int position, @NonNull parentsdhundo model) {
                 if(parentsname.equals(model.getParentsname().toString())){
 
                     holder.username.setText(model.getParentsname());

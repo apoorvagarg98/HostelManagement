@@ -19,17 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
 
-    <Button
-        android:id="@+id/gobacktohomew"
-        android:layout_width="152dp"
-        android:layout_height="69dp"
-        android:text="Go back to home"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout1w"
-        app:layout_constraintEnd_toEndOf="@+id/tickw"
-        app:layout_constraintStart_toStartOf="@+id/tickw"
-        app:layout_constraintTop_toBottomOf="@+id/tickw" />
-
     <ImageView
         android:id="@+id/cross"
         android:layout_width="129dp"
@@ -52,35 +41,16 @@
         android:layout_marginRight="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
         <TextView
-            android:id="@+id/bdw"
-            android:layout_width="155dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="36dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:text="Address:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/cdw"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/cdw"
-            app:layout_constraintTop_toBottomOf="@+id/cdw" />
-
-        <TextView
             android:id="@+id/ADw"
             android:layout_width="155dp"
             android:layout_height="49dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
             android:paddingRight="10dp"
@@ -95,49 +65,56 @@
             app:layout_constraintStart_toStartOf="@+id/nameDw"
             app:layout_constraintTop_toBottomOf="@+id/nameDw" />
 
-        <TextView
-            android:id="@+id/cdw"
-            android:layout_width="155dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="36dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:text=" Exit Time:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
+        <Button
+            android:id="@+id/gobacktohomew"
+            android:layout_width="152dp"
+            android:layout_height="69dp"
+            android:text="Go back to home"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="660dp" />
+
+        <Button
+            android:id="@+id/acceptdw"
+            android:layout_width="167dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/inpuut_bg"
+            android:text="Accept"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/edw"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/edw"
-            app:layout_constraintTop_toBottomOf="@+id/edw" />
+            app:backgroundTint="@color/design_default_color_primary_variant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bdw"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bdw"
+            app:layout_constraintTop_toBottomOf="@+id/bdw"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
-            android:id="@+id/ddw"
+            android:id="@+id/bdw"
             android:layout_width="155dp"
             android:layout_height="49dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="44dp"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
-            android:text="Entry Time:-"
+            android:text="Address:-"
             android:textAllCaps="true"
             android:textColor="#090909"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/ADw"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/ADw"
-            app:layout_constraintTop_toBottomOf="@+id/ADw" />
+            app:layout_constraintEnd_toEndOf="@+id/cdw"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cdw"
+            app:layout_constraintTop_toBottomOf="@+id/cdw" />
 
         <TextView
             android:id="@+id/edw"
             android:layout_width="155dp"
             android:layout_height="49dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="32dp"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
             android:paddingRight="10dp"
@@ -151,6 +128,44 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/ddw"
             app:layout_constraintTop_toBottomOf="@+id/ddw" />
+
+        <TextView
+            android:id="@+id/ddw"
+            android:layout_width="155dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Entry Time:-"
+            android:textAllCaps="true"
+            android:textColor="#090909"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/ADw"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/ADw"
+            app:layout_constraintTop_toBottomOf="@+id/ADw" />
+
+        <TextView
+            android:id="@+id/cdw"
+            android:layout_width="155dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text=" Exit Time:-"
+            android:textAllCaps="true"
+            android:textColor="#090909"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edw"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edw"
+            app:layout_constraintTop_toBottomOf="@+id/edw" />
 
         <TextView
             android:id="@+id/addressdw"
@@ -177,7 +192,7 @@
             android:id="@+id/entimedw"
             android:layout_width="211dp"
             android:layout_height="49dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="sans-serif-condensed"
             android:hint="Entry Time"
             android:paddingLeft="10dp"
@@ -198,7 +213,7 @@
             android:id="@+id/dw"
             android:layout_width="211dp"
             android:layout_height="49dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="44dp"
             android:fontFamily="sans-serif-condensed"
             android:hint="Exit Date"
             android:paddingLeft="10dp"
@@ -219,7 +234,7 @@
             android:id="@+id/extimedw"
             android:layout_width="211dp"
             android:layout_height="49dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="44dp"
             android:fontFamily="sans-serif-condensed"
             android:hint="Exit Time"
             android:paddingLeft="10dp"
@@ -232,26 +247,9 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/dw"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/dw"
             app:layout_constraintTop_toBottomOf="@+id/dw" />
-
-        <Button
-            android:id="@+id/acceptdw"
-            android:layout_width="167dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="108dp"
-            android:background="@drawable/inpuut_bg"
-            android:text="Accept"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/design_default_color_primary_variant"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/bdw"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/bdw"
-            app:layout_constraintTop_toBottomOf="@+id/bdw"
-            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/Declinedw"
@@ -268,13 +266,13 @@
             app:layout_constraintHorizontal_bias="0.704"
             app:layout_constraintStart_toStartOf="@+id/addressdw"
             app:layout_constraintTop_toBottomOf="@+id/addressdw"
-            app:layout_constraintVertical_bias="0.043" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/edatedw"
             android:layout_width="211dp"
             android:layout_height="49dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-condensed"
             android:hint="Entry Date"
             android:paddingLeft="10dp"
@@ -297,17 +295,17 @@
             android:layout_height="114dp"
             app:layout_constraintBottom_toTopOf="@+id/edatedw"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintHorizontal_bias="0.835"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/jgiicon" />
 
         <TextView
             android:id="@+id/nameDw"
             android:layout_width="246dp"
             android:layout_height="51dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="128dp"
             android:paddingLeft="20dp"
             android:paddingTop="5dp"
             android:paddingRight="10dp"
@@ -318,7 +316,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/imageView9w"
-            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
