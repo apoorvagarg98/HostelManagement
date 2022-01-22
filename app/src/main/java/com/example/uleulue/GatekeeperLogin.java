@@ -47,12 +47,12 @@ public class GatekeeperLogin extends AppCompatActivity implements View.OnClickLi
         remember5 = findViewById(R.id.r4);
         ttregister = (TextView) findViewById(R.id.cregister2);
         ttregister.setOnClickListener(this);
-        forgotpassword = (TextView) findViewById(R.id.cforgotPassword);
-        signinn = (Button) findViewById(R.id.clogin);
+        forgotpassword = (TextView) findViewById(R.id.forgotPassword2);
+        signinn = (Button) findViewById(R.id.btnLogin2);
         signinn.setOnClickListener(this);
         c2 = findViewById(R.id.checkBoxg);
         editemail = (EditText) findViewById(R.id.Cemail);
-        editPassword = (EditText) findViewById(R.id.cPassword3);
+        editPassword = (EditText) findViewById(R.id.cpassword2);
         progresssBar = (ProgressBar) findViewById(R.id.cprogressBar3);
         mAuth = FirebaseAuth.getInstance();
         SharedPreferences preferences5 = getSharedPreferences("checkbox5",MODE_PRIVATE);
@@ -113,7 +113,7 @@ public class GatekeeperLogin extends AppCompatActivity implements View.OnClickLi
                 startActivity(new Intent(this, GatekeeperRegister.class));
                 break;
 
-            case R.id.clogin:
+            case R.id.btnLogin2:
                 userLoginn();
                 break;
 
