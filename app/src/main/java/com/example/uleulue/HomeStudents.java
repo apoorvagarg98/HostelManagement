@@ -72,12 +72,12 @@ public class HomeStudents extends AppCompatActivity {
                     String usn = userprofile.usn;
                   pname = userprofile.parentsname;
 
-                    greetingTextView.setText("Welcome " + fullname);
-                    fullnameTextView.setText("Name- " + fullname);
-                    emailTextView.setText("Email- " + email);
-                    phonenumberTextView.setText("PhoneNumber- " + phone);
-                    usnTextView.setText("USN- " +  usn);
-                    parentsname.setText("Parents Name - "+ pname);
+                    greetingTextView.setText("welcome " + fullname);
+                    fullnameTextView.setText("Name - " + fullname);
+                    emailTextView.setText("email - " + email);
+                    phonenumberTextView.setText("phoneNumber- " + phone);
+                    usnTextView.setText("usn- " +  usn);
+                    parentsname.setText("parents name - "+ pname);
 
 
 

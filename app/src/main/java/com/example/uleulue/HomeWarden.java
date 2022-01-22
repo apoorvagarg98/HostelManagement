@@ -28,7 +28,7 @@ public class HomeWarden extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_warden);
-        viewreq = findViewById(R.id.viewreq);
+        viewreq = findViewById(R.id.his);
         history = findViewById(R.id.his);
         viewreq.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +66,7 @@ public class HomeWarden extends AppCompatActivity {
         final TextView fullnameText = (TextView) findViewById(R.id.wname);
         final TextView emailText= (TextView) findViewById(R.id.wemail);
         final TextView phonenumberText = (TextView) findViewById(R.id.wnum);
-        final TextView sharingText = (TextView) findViewById(R.id.wshar);
+        final TextView sharingText = (TextView) findViewById(R.id.wshare);
         final TextView hostelnameText = (TextView) findViewById(R.id.whostname);
 
         reference2.child(user2.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -83,10 +83,10 @@ public class HomeWarden extends AppCompatActivity {
 
 
                     fullnameText.setText("Name - " + ffullname);
-                    emailText.setText("Email - " + eemail);
-                    phonenumberText.setText("PhoneNumber- " + phone);
-                    sharingText.setText("Sharing- " +  sharing);
-                    hostelnameText.setText("HostelName- " +  hostelname);
+                    emailText.setText("email - " + eemail);
+                    phonenumberText.setText("phoneNumber- " + phone);
+                    sharingText.setText("sharing- " +  sharing);
+                    hostelnameText.setText("hostelname- " +  hostelname);
                 }
             }
 

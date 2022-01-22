@@ -79,9 +79,9 @@ public class ParentsHome extends AppCompatActivity {
                     String student = user4profile.studentname;
 
                     fullnameTextView.setText("Name - " + fullname);
-                    emailTextView.setText("Email - " + email);
-                    phonenumberTextView.setText("PhoneNumber- " + phone);
-                    usnTextView.setText("USN- " + usn);
+                    emailTextView.setText("email - " + email);
+                    phonenumberTextView.setText("phoneNumber- " + phone);
+                    usnTextView.setText("usn- " + usn);
                     studentname.setText("Student Name - " + student);
                     buttons.setOnClickListener(new View.OnClickListener() {
                         @Override

@@ -36,7 +36,7 @@
             <TextView
                 android:id="@+id/nmaeinhistory"
                 android:layout_width="match_parent"
-                android:layout_height="53dp"
+                android:layout_height="55dp"
                 android:text="Name:"
                 android:textColor="#673AB7"
                 android:textSize="24sp"
@@ -89,7 +89,7 @@
             <TextView
                 android:id="@+id/extinh"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="51dp"
                 android:text="Exit Time:"
                 android:textColor="#673AB7"
                 android:textSize="24sp"
@@ -102,7 +102,7 @@
             <TextView
                 android:id="@+id/exdinh"
                 android:layout_width="409dp"
-                android:layout_height="52dp"
+                android:layout_height="59dp"
                 android:layout_marginEnd="64dp"
                 android:layout_marginRight="64dp"
                 android:text="Exit Date:"
@@ -117,7 +117,7 @@
             <TextView
                 android:id="@+id/rextdinh"
                 android:layout_width="match_parent"
-                android:layout_height="79dp"
+                android:layout_height="67dp"
                 android:text="Real Exit Time And Date:"
                 android:textColor="#673AB7"
                 android:textSize="24sp"
@@ -130,7 +130,7 @@
             <TextView
                 android:id="@+id/rentdinh2"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="75dp"
                 android:text="Real Entry Time And Date:"
                 android:textColor="#673AB7"
                 android:textSize="24sp"

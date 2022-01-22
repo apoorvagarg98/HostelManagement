@@ -288,9 +288,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:backgroundTint="#EB5B1FAF"
-            />
-
+            app:backgroundTint="#EB5B1FAF" />
 
         <TextView
             android:id="@+id/alreadyhave"

@@ -94,15 +94,31 @@
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.044"
         app:srcCompat="@drawable/jgiicon" />
 
     <Button
+        android:id="@+id/realcamebacktimeanddate"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/inpuut_bg"
+        android:text="press to set time and date of entry"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/design_default_color_primary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aaddress" />
+
+    <Button
         android:id="@+id/realexittimeanddate"
-        android:layout_width="355dp"
+        android:layout_width="350dp"
         android:layout_height="51dp"
         android:background="@drawable/inpuut_bg"
         android:text="press to get exit time and date"
@@ -115,24 +131,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/realcamebacktimeanddate"
         app:layout_constraintTop_toBottomOf="@+id/realcamebacktimeanddate"
-        app:layout_constraintVertical_bias="0.288" />
-
-    <Button
-        android:id="@+id/realcamebacktimeanddate"
-        android:layout_width="355dp"
-        android:layout_height="51dp"
-        android:background="@drawable/inpuut_bg"
-        android:text="press to set time and date of entry"
-        android:textColor="@color/colorWhite"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:backgroundTint="@color/design_default_color_primary_variant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/aaddress"
-        app:layout_constraintHorizontal_bias="0.727"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eaddress"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.287" />
 
     <TextView
         android:id="@+id/eextime"
@@ -206,8 +205,8 @@
 
     <ImageView
         android:id="@+id/i"
-        android:layout_width="116dp"
-        android:layout_height="112dp"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
         android:layout_marginStart="76dp"
         android:layout_marginLeft="76dp"
         android:layout_marginTop="16dp"

@@ -45,7 +45,7 @@ public class GatekeeperHome extends AppCompatActivity {
 
     user3 = FirebaseAuth.getInstance().getCurrentUser();
     reference3 = FirebaseDatabase.getInstance().getReference("gusers");
-    viewacc=findViewById(R.id.cviewaccepted);
+    viewacc=findViewById(R.id.crequests4);
     userId3 = user3.getUid();
         viewacc.setOnClickListener(new View.OnClickListener() {
             @Override
