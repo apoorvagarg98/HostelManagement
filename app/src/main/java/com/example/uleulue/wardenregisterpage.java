@@ -36,7 +36,7 @@ public class wardenregisterpage extends AppCompatActivity implements View.OnClic
         rregister = (Button) findViewById(R.id.registeer);
         rregister.setOnClickListener(this);
         rTextname = (EditText) findViewById(R.id.namee);
-        al2 = (TextView) findViewById(R.id.alreadyhaveaccount);
+        al2 = (TextView) findViewById(R.id.alreadyhaveanaccount);
         rTextemail = (EditText) findViewById(R.id.Emaill);
         rTextphonenumber = (EditText) findViewById(R.id.contactnumberr);
         rTextpassword = (EditText) findViewById(R.id.passworrd);
