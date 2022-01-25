@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EB9D5FF4"
+        android:background="#1027B6"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:background="#EBA16AEF"
+            android:background="#1027B6"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme">
 
@@ -37,8 +37,7 @@
                 android:id="@+id/imageView17"
                 android:layout_width="100dp"
                 android:layout_height="114dp"
-                android:layout_marginLeft="@dimen/_2sdp"
-                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_gravity="right"
 
 
                 app:srcCompat="@drawable/jgiicon" />
@@ -49,7 +48,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:background="@drawable/backgroundd"
+
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
@@ -59,11 +60,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/_5sdp"
+              android:layout_margin="@dimen/_5sdp"
                 android:fontFamily="@font/roboto"
-                android:padding="@dimen/_5sdp"
+
                 android:text="Details"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorBlack"
                 android:textColorHighlight="@color/colorBlack"
                 android:textColorHint="@color/colorBlack"
                 android:textColorLink="@color/colorWhite"
@@ -192,14 +193,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/_10sdp"
+
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/logout"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_2sdp"
                     android:background="@drawable/btnn_bg"
                     android:text="LOGOUT"
                     android:textColor="@color/colorWhite"
@@ -215,8 +216,8 @@
                     android:id="@+id/buttons"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_marginBottom="72dp"
+                    android:layout_margin="@dimen/_2sdp"
+
                     android:background="@drawable/inpuut_bg"
                     android:text="select student"
                     android:textColor="@color/colorWhite"

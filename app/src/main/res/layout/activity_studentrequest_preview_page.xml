@@ -3,8 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/backgroundd"
     android:layout_height="match_parent"
     tools:context=".studentrequestPreviewPage">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/jgiicon" />
 
     <ImageView
         android:id="@+id/tick"
@@ -16,13 +29,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        />
 
     <Button
         android:id="@+id/gobacktohome"
         android:layout_width="152dp"
         android:layout_height="69dp"
         android:text="Go back to home"
+
+        app:backgroundTint="#EB5B1FAF"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout1"
         app:layout_constraintEnd_toEndOf="@+id/tick"
@@ -38,268 +53,259 @@
         android:textColor="@color/colorWhite"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/design_default_color_primary_variant"
+        app:backgroundTint="#EB5B1FAF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.919" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout1"
-        android:layout_width="413dp"
-        android:layout_height="629dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/bdw"
-            android:layout_width="155dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:text="Address:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/cd"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/cd"
-            app:layout_constraintTop_toBottomOf="@+id/cd" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
 
-        <TextView
-            android:id="@+id/ddw"
-            android:layout_width="163dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:text="Entry Time:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/A"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/A"
-            app:layout_constraintTop_toBottomOf="@+id/A" />
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/entimedw"
-            android:layout_width="211dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="ENTRY TIME"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="true"
-            android:textColor="#0B0A0A"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/edated"
-            app:layout_constraintHorizontal_bias="0.062"
-            app:layout_constraintStart_toStartOf="@+id/edated"
-            app:layout_constraintTop_toBottomOf="@+id/edated" />
 
-        <TextView
-            android:id="@+id/ed"
-            android:layout_width="155dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:text="Exit Date:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/ddw"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/ddw"
-            app:layout_constraintTop_toBottomOf="@+id/ddw" />
 
-        <TextView
-            android:id="@+id/addressd"
-            android:layout_width="211dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="28dp"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="ADDRESS"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="true"
-            android:textColor="#0B0A0A"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/extimed"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/extimed"
-            app:layout_constraintTop_toBottomOf="@+id/extimed" />
 
-        <Button
-            android:id="@+id/acceptd"
-            android:layout_width="167dp"
-            android:layout_height="43dp"
-            android:background="@drawable/inpuut_bg"
-            android:text="Accept"
-            android:textColor="@color/colorWhite"
-            android:textColorHighlight="@color/colorWhite"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/design_default_color_primary_variant"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Declined"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bdw"
-            app:layout_constraintVertical_bias="0.608" />
 
-        <Button
-            android:id="@+id/Declined"
-            android:layout_width="167dp"
-            android:layout_height="43dp"
-            android:background="@drawable/inpuut_bg"
-            android:text="Decline"
-            android:textColor="@color/colorWhite"
-            android:textColorHighlight="@color/colorWhite"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/design_default_color_primary_variant"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.934"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addressd"
-            app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-        <TextView
-            android:id="@+id/d"
-            android:layout_width="211dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="EXIT DATE"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="true"
-            android:textColor="#0B0A0A"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/entimedw"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/entimedw"
-            app:layout_constraintTop_toBottomOf="@+id/entimedw" />
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
 
-        <TextView
-            android:id="@+id/extimed"
-            android:layout_width="211dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="EXIT TIME"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="true"
-            android:textColor="#0B0A0A"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/d"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/d"
-            app:layout_constraintTop_toBottomOf="@+id/d" />
+            >
 
-        <TextView
-            android:id="@+id/A"
-            android:layout_width="169dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="48dp"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:text="Entry Date:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/imageView9"
-            app:layout_constraintHorizontal_bias="0.187"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            <TextView
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Entry Date:-"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/edated"
+                app:layout_constraintHorizontal_bias="0.187"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-        <TextView
-            android:id="@+id/cd"
-            android:layout_width="155dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:text="Exit Time:-"
-            android:textAllCaps="true"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/ed"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/ed"
-            app:layout_constraintTop_toBottomOf="@+id/ed" />
 
-        <TextView
-            android:id="@+id/edated"
-            android:layout_width="211dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="48dp"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="ENTRY DATE"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="true"
-            android:textColor="#0B0A0A"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            <TextView
+                android:id="@+id/ddw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Entry Time:-"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/A"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/A"
+                app:layout_constraintTop_toBottomOf="@+id/A" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="100dp"
-            android:layout_height="114dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.438"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.03"
-            app:srcCompat="@drawable/jgiicon" />
+            <TextView
+                android:id="@+id/ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Exit Date:-"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ddw"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ddw" />
+
+            <TextView
+                android:id="@+id/cd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Exit Time:-"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ed"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed" />
+
+            <TextView
+                android:id="@+id/bdw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Address:-"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cd"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cd" />
+
+            <Button
+                android:id="@+id/acceptd"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
+                android:background="@drawable/inpuut_bg"
+                android:text="Accept"
+                android:textColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#EB5B1FAF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Declined"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bdw"
+                app:layout_constraintVertical_bias="0.608" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="156dp">
+
+                <TextView
+                    android:id="@+id/edated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Entry Date:-"
+                    android:textAllCaps="true"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/edated"
+                    app:layout_constraintHorizontal_bias="0.187"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                <TextView
+                    android:id="@+id/entimedw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Entry Time:-"
+                    android:textAllCaps="true"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/A"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/A"
+                    app:layout_constraintTop_toBottomOf="@+id/A" />
+
+                <TextView
+                    android:id="@+id/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Exit Date:-"
+                    android:textAllCaps="true"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/ddw"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ddw" />
+
+                <TextView
+                    android:id="@+id/extimed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Exit Time:-"
+                    android:textAllCaps="true"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/ed"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ed" />
+
+                <TextView
+                    android:id="@+id/addressd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Address:-"
+                    android:textAllCaps="true"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/cd"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cd" />
+
+
+                <Button
+                    android:id="@+id/Declined"
+                    android:layout_width="150dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/inpuut_bg"
+                    android:text="Decline"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#EBE40E0E"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Declined"
+                    app:layout_constraintHorizontal_bias="0.142"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bdw"
+                    app:layout_constraintVertical_bias="0.608" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
