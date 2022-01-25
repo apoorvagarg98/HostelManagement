@@ -34,28 +34,28 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     String checkbox;
 
 
-    CheckBox remember,c1;
+    CheckBox remember;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        register = (TextView) findViewById(R.id.register);
+        register = (TextView) findViewById(R.id.registerstudent);
         register.setOnClickListener(this);
 
-        editTextForgotpassword = (TextView) findViewById(R.id.forgotPassword2);
+        editTextForgotpassword = (TextView) findViewById(R.id.forgotPassword2student);
         editTextForgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(login.this, forgotpassword.class));
             }
         });
-        signin = (Button) findViewById(R.id.btnLogin2);
+        signin = (Button) findViewById(R.id.btnLogin2student);
         signin.setOnClickListener(this);
-        c1 = findViewById(R.id.c);
 
-        editTextemail = (EditText) findViewById(R.id.inputEmail2);
-        editTextPassword = (EditText) findViewById(R.id.inputPassword2);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar2);
+
+        editTextemail = (EditText) findViewById(R.id.inputEmail2student);
+        editTextPassword = (EditText) findViewById(R.id.inputPassword2student);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar2student);
         mAuth = FirebaseAuth.getInstance();
         SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
         checkbox = preferences.getString("remember","");
@@ -69,7 +69,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this,"please login",Toast.LENGTH_LONG).show();
         }
 
-        remember = findViewById(R.id.remember2);
+        remember = findViewById(R.id.remember2student);
         remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -91,16 +91,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                 }
             }
         });
-        c1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    editTextPassword.setTransformationMethod(null);
-                } else {
-                    editTextPassword.setTransformationMethod(new PasswordTransformationMethod());
-                }
-            }
-        });
+
 
     }
 
@@ -108,16 +99,16 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.register:
+            case R.id.registerstudent:
                 startActivity(new Intent(this,studentreg.class));
 
                 break;
 
-            case R.id.btnLogin2:
+            case R.id.btnLogin2student:
                 userLogin();
                 break;
 
-            case R.id.forgotPassword2:
+            case R.id.forgotPassword2student:
                 startActivity(new Intent(this,forgotpassword.class));
                 break;
 

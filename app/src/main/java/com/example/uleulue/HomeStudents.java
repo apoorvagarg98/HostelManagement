@@ -33,7 +33,7 @@ public class HomeStudents extends AppCompatActivity {
         setContentView(R.layout.activity_home_students);
 
 
-        logout = (Button) findViewById(R.id.logout);
+        logout = (Button) findViewById(R.id.logoutstudent);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,18 +47,18 @@ public class HomeStudents extends AppCompatActivity {
 
             }
         });
-        opreq = (Button) findViewById(R.id.outpassrequest);
+        opreq = (Button) findViewById(R.id.outpassrequeststudent);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("users");
         userId = user.getUid();
 
-        final TextView greetingTextView = (TextView) findViewById(R.id.Headline);
-        final TextView fullnameTextView = (TextView) findViewById(R.id.nameLabel);
-        final TextView emailTextView = (TextView) findViewById(R.id.Emailadressdlabel);
-        final TextView phonenumberTextView = (TextView) findViewById(R.id.phonenumberLabel);
-        final TextView usnTextView = (TextView) findViewById(R.id.USNlabel);
-        final TextView parentsname = (TextView) findViewById(R.id.pname);
+        final TextView greetingTextView = (TextView) findViewById(R.id.Headlinestudent);
+        final TextView fullnameTextView = (TextView) findViewById(R.id.nameLabelstudent);
+        final TextView emailTextView = (TextView) findViewById(R.id.Emailadressdlabelstudent);
+        final TextView phonenumberTextView = (TextView) findViewById(R.id.phonenumberLabelstudent);
+        final TextView usnTextView = (TextView) findViewById(R.id.USNlabelstudent);
+        final TextView parentsname = (TextView) findViewById(R.id.pnamestudent);
 
         reference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

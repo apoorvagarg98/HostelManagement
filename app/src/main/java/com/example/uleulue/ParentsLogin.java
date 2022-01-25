@@ -30,7 +30,7 @@ public class ParentsLogin extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
     String checkbox2;
-    CheckBox remember2,c4;
+    CheckBox remember2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +48,7 @@ public class ParentsLogin extends AppCompatActivity implements View.OnClickListe
 
         signin = (Button) findViewById(R.id.btnLogin2);
         signin.setOnClickListener(this);
-        c4 = findViewById(R.id.checkBoxp);
+
         dTextemail = (EditText) findViewById(R.id.inputEmail2);
         dTextPassword = (EditText) findViewById(R.id.inputPassword2);
         progressBar = (ProgressBar) findViewById(R.id.progressBar2);
@@ -87,16 +87,7 @@ public class ParentsLogin extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
-        c4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    dTextPassword.setTransformationMethod(null);
-                } else {
-                    dTextPassword.setTransformationMethod(new PasswordTransformationMethod());
-                }
-            }
-        });
+
 
     }
 

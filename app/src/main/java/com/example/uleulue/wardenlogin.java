@@ -30,7 +30,7 @@ public class wardenlogin extends AppCompatActivity  implements View.OnClickListe
     private FirebaseAuth mAuth;
     private ProgressBar edprogressBar;
     String checkbox3;
-    CheckBox remember3,c3;
+    CheckBox remember3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class wardenlogin extends AppCompatActivity  implements View.OnClickListe
         edsignin= (Button) findViewById(R.id.lbutton);
         edsignin.setOnClickListener(this);
         remember3 = findViewById(R.id.remember3);
-        c3 = findViewById(R.id.checkBoxw);
+
         edTextemail = (EditText) findViewById(R.id.lemail);
         edTextPassword = (EditText) findViewById(R.id.lpass);
         edprogressBar = (ProgressBar) findViewById(R.id.lprogress);
@@ -84,16 +84,6 @@ public class wardenlogin extends AppCompatActivity  implements View.OnClickListe
                     editor3.putString("remember3","false");
                     editor3.apply();
                     Toast.makeText(wardenlogin.this,"Unchecked",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-        c3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    edTextPassword.setTransformationMethod(null);
-                } else {
-                    edTextPassword.setTransformationMethod(new PasswordTransformationMethod());
                 }
             }
         });

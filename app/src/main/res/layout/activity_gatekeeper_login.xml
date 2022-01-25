@@ -98,13 +98,6 @@
 
                 />
 
-            <CheckBox
-                android:id="@+id/checkBoxg"
-                android:layout_width="146dp"
-                android:layout_height="41dp"
-
-                android:text="Show Password"
-                android:textStyle="bold" />
         </LinearLayout>
 
         <Button

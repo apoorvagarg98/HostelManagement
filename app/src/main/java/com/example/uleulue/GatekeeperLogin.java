@@ -37,7 +37,7 @@ public class GatekeeperLogin extends AppCompatActivity implements View.OnClickLi
     String checkbox5;
 
 
-    CheckBox remember5,c2;
+    CheckBox remember5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class GatekeeperLogin extends AppCompatActivity implements View.OnClickLi
         forgotpassword = (TextView) findViewById(R.id.forgotPassword2);
         signinn = (Button) findViewById(R.id.btnLogin2);
         signinn.setOnClickListener(this);
-        c2 = findViewById(R.id.checkBoxg);
+
         editemail = (EditText) findViewById(R.id.Cemail);
         editPassword = (EditText) findViewById(R.id.cpassword2);
         progresssBar = (ProgressBar) findViewById(R.id.cprogressBar3);
@@ -87,16 +87,7 @@ public class GatekeeperLogin extends AppCompatActivity implements View.OnClickLi
                 }
             }
         });
-        c2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    editPassword.setTransformationMethod(null);
-                } else {
-                    editPassword.setTransformationMethod(new PasswordTransformationMethod());
-                }
-            }
-        });
+
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

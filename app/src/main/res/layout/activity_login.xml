@@ -1,175 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/p"
-    tools:context=".login">
+    android:background="@drawable/backgroundd"
+    tools:context=".login">\
 
-    <EditText
-        android:id="@+id/inputEmail2"
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/inpuut_bg"
-        android:drawableLeft="@drawable/ic_login_email_24"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="EMAIL"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:shadowColor="#131313"
-        android:textColor="#0B0A0A"
-        android:textColorHighlight="#0B0A0A"
-        android:textColorHint="@color/colorBlack"
-        android:textColorLink="#1B1A1A"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textLogin2"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="@+id/textLogin2"
-        app:layout_constraintTop_toBottomOf="@+id/textLogin2" />
-
-    <TextView
-        android:id="@+id/textLogin2"
-        android:layout_width="315dp"
-        android:layout_height="54dp"
-        android:text="STUDENT'S LOG IN"
-        android:textColor="@color/colorBlack"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
 
 
-    <Button
-        android:id="@+id/btnLogin2"
-        android:layout_width="232dp"
-        android:layout_height="49dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
 
-        android:layout_marginTop="28dp"
-        android:background="@drawable/inpuut_bg"
-        android:text="LOGIN"
-        android:textColor="@color/colorWhite"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="@color/design_default_color_primary_dark"
-        app:layout_constraintEnd_toEndOf="@+id/c"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="@+id/remember2"
-        app:layout_constraintTop_toBottomOf="@+id/c"
-        app:rippleColor="@color/colorRed" />
 
-    <TextView
-        android:id="@+id/register"
-        android:layout_width="225dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:text="Dont have an Account?"
-        android:textColor="@color/colorBlack"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin2"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textLogin2student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Students's Log In"
+            android:textColor="#030E2E"
+            android:textSize="30sp"
+            android:textStyle="normal" />
 
-    <TextView
-        android:id="@+id/forgotPassword2"
-        android:layout_width="162dp"
-        android:layout_height="37dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:shadowColor="@color/colorBlack"
-        android:text="Forgot Password?"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/register"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="@+id/register"
-        app:layout_constraintTop_toBottomOf="@+id/register"
-        app:layout_constraintVertical_bias="0.13"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_80sdp"
 
-    <EditText
-        android:id="@+id/inputPassword2"
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/inpuut_bg"
-        android:drawableLeft="@drawable/ic_password"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="PASSWORD"
-        android:inputType="textPassword"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="20dp"
 
-        android:paddingBottom="10dp"
-        android:password="false"
-        android:textColor="#050505"
-        android:textColorHint="@color/colorBlack"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail2"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail2" />
+            android:src="@drawable/parentslogin">
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="93dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin2"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin2"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin2"
-        app:layout_constraintVertical_bias="0.126" />
+        </ImageView>
 
-    <CheckBox
-        android:id="@+id/remember2"
-        android:layout_width="141dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:text="Remember Me"
-        android:textColor="#090909"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword2" />
+        <EditText
+            android:id="@+id/inputEmail2student"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/textviewbg"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"
+            android:backgroundTint="#ECE4FB"
+            android:ems="20"
+            android:hint="Email"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp"
+            android:shadowColor="#FBFBFB"
+            android:textColor="#0A0B0B"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#777575"
+            android:textColorLink="#FAF3F3"
+            android:textStyle="normal" />
 
-    <CheckBox
-        android:id="@+id/c"
-        android:layout_width="141dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:text="Show Password"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword2" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:passwordToggleEnabled="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="238dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <EditText
+                android:id="@+id/inputPassword2student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewbg"
+                android:backgroundTint="#ECE4FB"
+                android:ems="50"
+
+                android:fontFamily="@font/roboto"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_8sdp"
+                android:textColor="#0F0F10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            \
+
+            <CheckBox
+                android:id="@+id/remember2student"
+                android:layout_width="146dp"
+                android:layout_height="41dp"
+
+                android:text="Remember me"
+                android:textColor="#090909"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin2student"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/inpuut_bg"
+            android:text="Login"
+
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EB5B1FAF"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxp"
+            app:layout_constraintStart_toStartOf="@+id/remember2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxp"
+            app:rippleColor="@color/colorRed" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar2student"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/registerstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+
+            android:text="Don't have an Account?"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/forgotPassword2student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:shadowColor="@color/colorBlack"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
