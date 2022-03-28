@@ -24,17 +24,20 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
             android:gravity="center"
+            android:background="@drawable/txtbg"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/_5sdp"
             android:text="Warden's Log In"
             android:textColor="#030E2E"
             android:textSize="30sp"
             android:textStyle="normal" />
 
         <ImageView
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_80sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_70sdp"
 
 
-            android:src="@drawable/parentslogin">
+            android:src="@drawable/warden">
 
         </ImageView>
 
@@ -42,7 +45,7 @@
             android:id="@+id/lemail"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_40sdp"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
             android:ems="20"
@@ -60,8 +63,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             app:passwordToggleEnabled="true"
+            android:drawablePadding="5dp"
+            app:passwordToggleTint="#EB5B1FAF"
             tools:layout_editor_absoluteX="92dp"
             tools:layout_editor_absoluteY="238dp">
 
@@ -80,25 +85,19 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:gravity="center"
-            android:orientation="horizontal">
-            \
+
 
             <CheckBox
                 android:id="@+id/remember3"
                 android:layout_width="146dp"
                 android:layout_height="41dp"
-
+                android:gravity="center"
                 android:text="Remember me"
                 android:textColor="#090909"
 
                 />
 
-        </LinearLayout>
+
 
         <Button
             android:id="@+id/lbutton"
@@ -107,6 +106,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/inpuut_bg"
             android:text="Login"
+           android:gravity="center"
 
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"

@@ -22,19 +22,23 @@
             android:id="@+id/cLogin3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/txtbg"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/_5sdp"
             android:fontFamily="@font/roboto"
             android:gravity="center"
-            android:text="GateKeeper's Log In"
+
+            android:text="Gatekeeper Log In"
             android:textColor="#030E2E"
             android:textSize="30sp"
             android:textStyle="normal" />
 
         <ImageView
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_80sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_70sdp"
 
 
-            android:src="@drawable/parentslogin">
+            android:src="@drawable/gatekeeper">
 
         </ImageView>
 
@@ -42,7 +46,7 @@
             android:id="@+id/Cemail"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_40sdp"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
             android:ems="20"
@@ -60,8 +64,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             app:passwordToggleEnabled="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            app:passwordToggleTint="#EB5B1FAF"
             tools:layout_editor_absoluteX="92dp"
             tools:layout_editor_absoluteY="238dp">
 

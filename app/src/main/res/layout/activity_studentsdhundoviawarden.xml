@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/backgroundd"
     tools:context=".studentsdhundoviawarden">
 
     <androidx.appcompat.widget.Toolbar
@@ -21,11 +22,13 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-          android:padding="@dimen/_10sdp"
-            android:text="Requests of students"
-            android:textAllCaps="true"
+            android:padding="@dimen/_10sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/txtbg"
+            android:text="Requests Of Students"
+
             android:gravity="center"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             android:textSize="18sp"
             android:textStyle="bold" />
 

@@ -212,17 +212,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/crequests4"
-                    android:layout_width="398dp"
-                    android:layout_height="61dp"
+                    android:layout_width="160dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_5sdp"
                     android:background="@drawable/btnn_bg"
-                    android:text="View Accepted Request"
+                    android:text="View Request"
                     android:textColor="@color/colorWhite"
                     android:textSize="16sp"
                     android:textStyle="bold"

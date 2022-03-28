@@ -25,7 +25,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-
+                android:backgroundTint="@color/white"
+                android:background="@drawable/txtbg"
                 android:paddingRight="10dp"
                 android:text="Parents Registration"
                 android:textColor="@color/colorBlack"
@@ -295,11 +296,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+
             android:onClick="lechaloUsPaar"
             android:paddingLeft="10dp"
             android:text="Already have an account?"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/txtbg"
             android:textColor="@color/colorBlack"
-
             android:textColorHint="@color/colorBlack"
             android:textSize="16sp"
             android:textStyle="bold"

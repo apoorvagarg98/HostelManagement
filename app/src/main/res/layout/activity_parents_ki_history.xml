@@ -45,8 +45,7 @@
         android:layout_height="458dp"
         android:background="#B048E310"
         android:cacheColorHint="#F42F2F"
-        android:listSelector="@color/design_default_color_primary_dark"
-      >
+        android:listSelector="@color/design_default_color_primary_dark">
 
     </ListView>
     </LinearLayout>
